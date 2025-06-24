@@ -2,7 +2,7 @@ import numpy as np
 import pickle
 import streamlit as st
 
-loaded_model = pickle.load(open('C:\Dhruv_ML\weather_model.sav', "rb"))
+loaded_model = pickle.load(open('weather_model.sav', "rb"))
 
 def weather_prediction(input_data):
     input_data_as_numpy_array = np.array(input_data)
